@@ -16,6 +16,8 @@ import java.util.List;
  *
  * @Selsect @Insert @Update @Delete
  */
+//开启二级缓存
+@CacheNamespace(blocking = true)
 public interface IUserDao {
 
     /**

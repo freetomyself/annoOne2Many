@@ -5,6 +5,10 @@
 <configuration>
     <!--引入配置文件-->
     <properties resource="jdbcConfig.properties"/>
+    <!--开启二级缓存-->
+    <settings>
+        <setting name="cacheEnabled" value="true"/>
+    </settings>
     <typeAliases>
         <!--配置别名-->
         <package name="com.itcast.domain"/>
